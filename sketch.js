@@ -6,6 +6,8 @@ function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
   background(220);
   angleMode(DEGREES);
+  stroke(1);
+  circle(mouseX, mouseY, 20);
   // colorMode(HSB,360, 150, 100,1);
   // slider = createSlider(100,255,50);
   // slider2 = createSlider(6,32,6);
@@ -15,6 +17,7 @@ function setup() {
 
 function draw() {
   background(255,130,12,5);
+
 //   translate(width/2, height/2);
 //   let sat = slider.value();
 //   angle = slider2.value();
@@ -32,15 +35,14 @@ function draw() {
 //   }
 // }
 pattern();
-
   if (mouseIsPressed == true) {
 
  clear();
 
-    // background(255,130,12,5);
-    // stroke(map(mouseX,0,600,0,255,true),map(mouseY,0,600,0,115,true) );
-    // line(width- mouseX, height-mouseY, width-pmouseX, height-pmouseY);
-    // line(mouseX, mouseY, pmouseX, pmouseY);
+    //background(255,130,12,5);
+    stroke(map(mouseX,0,600,0,255,true),map(mouseY,0,600,0,115,true) );
+    //line(width- mouseX, height-mouseY, width-pmouseX, height-pmouseY);
+    line(mouseX, mouseY, pmouseX, pmouseY);
     //array.push([mouseX, mouseY]);
 }
 
@@ -80,6 +82,7 @@ function keyTyped(){
     saveCanvas('fileName', 'png');
 } else if (key === 'd'){
 background(255);
+
 //display image
 //clear();
 // beginShape();
