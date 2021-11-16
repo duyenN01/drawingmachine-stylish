@@ -44,6 +44,8 @@ function draw() {
 
  //clear();
  background(random(255,255,50), random(255,255,50), random(100, 255,10));
+ fill('pink');
+ //rect (windowWidth/35, windowHeight/8, windowWidth/5, windowHeight/3);
 pattern();
 
     //background(255,130,12,5);
