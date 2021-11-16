@@ -39,12 +39,12 @@ function draw() {
 //     pop();
 //   }
 // }
-pattern();
+
   if (mouseIsPressed == true) {
 
- clear();
+ //clear();
  background(random(255,255,50), random(255,255,50), random(100, 255,10));
-
+pattern();
 
     //background(255,130,12,5);
     //stroke(map(mouseX,0,600,0,255,true);
@@ -56,6 +56,7 @@ pattern();
 }
 function mousePressed(){
   mySound.play();
+
 }
 
 function pattern(){
@@ -74,7 +75,7 @@ function pattern(){
     //create patterns with
     beginShape()
     for (var j = 0; j <360; j+=60){
-      var rad = i*3;
+      var rad = i*4;
       var x = rad *cos(j);
       var y = rad *sin(j);
       var z = sin(frameCount *2 + i *5)*50
