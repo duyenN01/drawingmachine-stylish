@@ -40,7 +40,7 @@ pattern();
   if (mouseIsPressed == true) {
 
  clear();
- background(random(255,255,50), random(255,100,50), random(100,255, 255));
+ background(random(255,255,50), random(255,255,50), random(100, 255,10));
 
     //background(255,130,12,5);
     //stroke(map(mouseX,0,600,0,255,true);
