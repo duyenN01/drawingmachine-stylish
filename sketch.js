@@ -17,6 +17,8 @@ function setup() {
 
 function draw() {
   background(255,130,12,5);
+  // fill('pink');
+  // circle(mouseX,mouseY,20,30);
 
 //   translate(width/2, height/2);
 //   let sat = slider.value();
@@ -38,11 +40,12 @@ pattern();
   if (mouseIsPressed == true) {
 
  clear();
+ background(random(255,255,50), random(255,100,50), random(100,255, 255));
 
     //background(255,130,12,5);
-    stroke(map(mouseX,0,600,0,255,true),map(mouseY,0,600,0,115,true) );
+    //stroke(map(mouseX,0,600,0,255,true);
     //line(width- mouseX, height-mouseY, width-pmouseX, height-pmouseY);
-    line(mouseX, mouseY, pmouseX, pmouseY);
+    //line(mouseX, mouseY, pmouseX, pmouseY);
     //array.push([mouseX, mouseY]);
 }
 
@@ -53,7 +56,8 @@ function pattern(){
   rotateX(60);
   noFill();
   stroke(255);
-  for (var i = 0; i<50; i++){
+  //adjust colors
+  for (var i = 0; i <50; i++){
     var r = map(sin(frameCount/2), -1, 1, 100, 200);
     var g = map(i, 0, 50, 100, 200);
     var b = map(cos(frameCount), -1,1, 200, 100);
