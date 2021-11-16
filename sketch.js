@@ -1,6 +1,8 @@
 let array =[];
 
-
+function preload(){
+  mySound = loadSound('fairy.mp3');
+}
 function setup() {
 
   createCanvas(windowWidth, windowHeight, WEBGL);
@@ -8,6 +10,7 @@ function setup() {
   angleMode(DEGREES);
   stroke(1);
   circle(mouseX, mouseY, 20);
+
   // colorMode(HSB,360, 150, 100,1);
   // slider = createSlider(100,255,50);
   // slider2 = createSlider(6,32,6);
@@ -42,6 +45,7 @@ pattern();
  clear();
  background(random(255,255,50), random(255,255,50), random(100, 255,10));
 
+
     //background(255,130,12,5);
     //stroke(map(mouseX,0,600,0,255,true);
     //line(width- mouseX, height-mouseY, width-pmouseX, height-pmouseY);
@@ -49,6 +53,9 @@ pattern();
     //array.push([mouseX, mouseY]);
 }
 
+}
+function mousePressed(){
+  mySound.play();
 }
 
 function pattern(){
