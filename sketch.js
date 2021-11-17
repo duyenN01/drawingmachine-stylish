@@ -81,7 +81,8 @@ function pattern(){
       var rad = i*5;
       var x = rad *cos(j);
       var y = rad *sin(j);
-      var z = sin(frameCount *3 + i *5)*100
+      // speed & depth
+      var z = sin(frameCount *3 + i *5)*110
 
       vertex(x,y,z);
 
