@@ -77,10 +77,11 @@ function pattern(){
     //create patterns with
     beginShape()
     for (var j = 0; j <360; j+=60){
-      var rad = i*4;
+      //how big /width of the pattern
+      var rad = i*5;
       var x = rad *cos(j);
       var y = rad *sin(j);
-      var z = sin(frameCount *2 + i *5)*50
+      var z = sin(frameCount *3 + i *5)*100
 
       vertex(x,y,z);
 
