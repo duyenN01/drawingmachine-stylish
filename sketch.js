@@ -43,7 +43,7 @@ function draw() {
   if (mouseIsPressed == true) {
 
  //clear();
- background(random(255,255,50), random(255,255,50), random(100, 255,10));
+ background(random(0,50,0), random(10,0,0), random(10,0,5));
  fill('pink');
  //rect (windowWidth/35, windowHeight/8, windowWidth/5, windowHeight/3);
 pattern();
